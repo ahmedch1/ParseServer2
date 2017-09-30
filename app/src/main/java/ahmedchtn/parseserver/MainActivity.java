@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Parse.enableLocalDatastore(this);
 
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId("fdU8IDm1v2DSfTJY1Ocfr4LkNORnjH42AfNyA6wP")
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         );
         ParseUser.enableRevocableSessionInBackground();
 
-        Parse.enableLocalDatastore(this);
+
 
     }
 }
