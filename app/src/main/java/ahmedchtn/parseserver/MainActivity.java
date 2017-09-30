@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.parse.Parse;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,8 +22,11 @@ public class MainActivity extends AppCompatActivity {
                 .build()
         );
         ParseUser.enableRevocableSessionInBackground();
-
-
+        ParseObject gameScore=new ParseObject("GameScore");
+        gameScore.put("score",1337);
+        gameScore.put("playerName","Sean Plott");
+        gameScore.put("cheatMode",false);
+        gameScore.saveInBackground();
 
     }
 }
