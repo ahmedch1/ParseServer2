@@ -1,7 +1,10 @@
 package ahmedchtn.parseserver;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.parse.Parse;
+import com.parse.ParseUser;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Parse.initalize(new Parse.Configuration.Builder(this)
+        Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId("")
                 .clientKey(null)
                 .server("https://parseapi.back4app.com/")//the trailing slash is important
