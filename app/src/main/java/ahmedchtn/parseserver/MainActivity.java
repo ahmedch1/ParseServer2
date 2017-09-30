@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId("")
-                .clientKey(null)
+                .applicationId("fdU8IDm1v2DSfTJY1Ocfr4LkNORnjH42AfNyA6wP")
+                .clientKey("7UIFtj4m6CbRkEEcqKzyzQ565luzoaXuVANECQPr")
                 .server("https://parseapi.back4app.com/")//the trailing slash is important
                 .build()
         );
